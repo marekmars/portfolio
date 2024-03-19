@@ -1,0 +1,83 @@
+---
+import SkillIcon from './SkillIcon.astro';
+import { focus, familiar } from '../utils';
+import BackToTop from './BackToTop.astro';
+---
+
+<section
+  class="sitw grid lg:grid-cols-3 gap-10 clear-both pt-24 2k:pt-40 4k:pt-60 mb-32 mx-auto w-10/12 2xl:w-8/12 items-center"
+  id="about">
+  <div class="lg:col-span-2">
+    <h1
+      class="justify-beetween font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">
+      Who am I?
+    </h1>
+    <p class="mt-4 text-gray-500 dark:text-gray-300">
+      I am a passionate and focused individual with a keen interest in software
+      development and a growing foundation in training.
+    </p>
+    <p class="mt-4 text-gray-500 dark:text-gray-300">
+      Committed to continuous learning and skill development, I actively stay up-to-date
+      with the latest technologies. I thrive both as a collaborative team member in agile
+      projects and as a motivated self-starter capable of working under my initiative.
+    </p>
+    <p class="mt-4 text-gray-500 dark:text-gray-300">
+      Currently, I am engaged in Astro projects and am actively developing web
+      applications using Angular for the frontend, Tailwind for styling, and .NET for the
+      backend.
+    </p>
+    <div class="w-fit mx-auto mt-4">
+      <a
+        data-tippy-content="Download CV"
+        href="/assets/cv.pdf"
+        aria-label="Open P D F file"
+        type="button"
+        
+        target=_blank
+        class="group flex items-center w-fit m-auto text-white font-semibold hover:text-green-400 active:text-green-500">
+        <span>Download CV</span>
+        <svg
+          class="h-7 md:h-9 lg:h-11 w-fit ml-2"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 -960 960 960">
+          <path
+            class="group-hover:fill-green-400 group-active:fill-green-500"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"
+            fill="white"
+          ></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="lg:col-span-1">
+    <img
+      class="object-cover rounded-xl aspect-square h-fit"
+      src="/assets/profile_pic.webp"
+      alt="Profile Picture"
+    />
+  </div>
+</section>
+
+<section
+  class="clear-both 2k:pt-40 4k:pt-60 text-white font-poppins w-10/12 2xl:w-8/12 mx-auto text-center mb-20"
+  id="tecs">
+  <h3 class="text-xl mt-16 2k:text-2xl 4k:text-4xl 4k:mt-24">I mainly focus on</h3>
+  <div
+    class="flex flex-wrap justify-center mt-6 gap-8 2k:gap-12 4k:mt-12 mx-auto 4k:gap-16">
+    {focus.map((props) => <SkillIcon {...props} />)}
+  </div>
+
+  <h3 class="text-xl mt-16 2k:mt-22 2k:text-2xl 4k:text-4xl 4k:mt-24">
+    I am familiar working with
+  </h3>
+  <div
+    class="flex justify-center flex-wrap mt-6 gap-8 4k:mt-16 mx-auto 2k:gap-12 4k:gap-16">
+    {familiar.map((props) => <SkillIcon {...props} />)}
+  </div>
+  
+</section>
+
