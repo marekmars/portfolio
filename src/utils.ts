@@ -88,11 +88,11 @@ export const familiar = [
     title: 'Express.js',
     tooltip: 'Minimalist nodejs web framework',
   },
-  {
-    src: '/assets/docker.svg',
-    title: 'Docker',
-    tooltip: 'open platform for developing, shipping, and running applications',
-  },
+  // {
+  //   src: '/assets/docker.svg',
+  //   title: 'Docker',
+  //   tooltip: 'open platform for developing, shipping, and running applications',
+  // },
   {
     src: '/assets/astro.svg',
     title: 'Astro',
@@ -113,14 +113,14 @@ export const familiar = [
     title: 'Android Studio',
     tooltip: 'Most popular Android development tool',
   },
-  {
-    src: '/assets/ionic.svg',
-    title: 'Ionic',
-    tooltip: 'Cross-platform mobile app development framework',
-  },
-  {
-    src: '/assets/capacitor.svg',
-    title: 'Capacitor',
-    tooltip: 'Cross-platform mobile app development framework',
-  },
+  // {
+  //   src: '/assets/ionic.svg',
+  //   title: 'Ionic',
+  //   tooltip: 'Cross-platform mobile app development framework',
+  // },
+  // {
+  //   src: '/assets/capacitor.svg',
+  //   title: 'Capacitor',
+  //   tooltip: 'Cross-platform mobile app development framework',
+  // },
 ];
