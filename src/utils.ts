@@ -138,9 +138,9 @@ export const familiar = [
   //   title: 'Ionic',
   //   tooltip: 'Cross-platform mobile app development framework',
   // },
-  // {
-  //   src: '/assets/capacitor.svg',
-  //   title: 'Capacitor',
-  //   tooltip: 'Cross-platform mobile app development framework',
-  // },
+  {
+    src: '/assets/capacitor.svg',
+    title: 'Capacitor',
+    tooltip: 'Cross-platform mobile app development framework',
+  },
 ];
